@@ -731,10 +731,11 @@ width: 100%;
 	background: #fdf1e2;
 	padding:60px 3em 60px 3em;
 }
+/*--
 .navbar.sub-shrink {
-  top: 132px; /*-- pikuaku--*/
+  top: 132px; 
 }
-
+--*/
 .menu {
   /*width: calc(100% / 3);*/
   /*display: flex;
