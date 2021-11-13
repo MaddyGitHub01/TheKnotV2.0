@@ -836,7 +836,7 @@ width: 100%;
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #fff;
+ color: #fff;
 font-size: 14px;
 position: relative;
 cursor: pointer;
@@ -846,7 +846,7 @@ transition: 0.5s;
 left: 92px;
 }
 .mobile-nav-toggle a {/*--- pikuaku ---*/
-  padding: 4.5em 0;
+  padding: 2.5em 0;
   display: block;
 }
 
