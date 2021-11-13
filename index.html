@@ -721,6 +721,69 @@
 	}
   });
  	</script>
+	
+	<script type="text/javascript">
+	 
+   
+$(function() {
+  $('.mobile-nav-toggle').mouseenter(function() {
+	$('.navbar').addClass("active");
+  })
+});
+
+$(document).mouseup(function(e)
+{
+	var container = $(".navbar");
+
+	// if the target of the click isn't the container nor a descendant of the container
+	if (!container.is(e.target) && container.has(e.target).length === 0)
+	{
+    	container.removeClass("active");
+	}
+});
+
+
+  	$(document).ready(function(){ 	 
+    	$(".dropdown ul").hide();
+    	$(".dropdown").click(function(){
+      	$(".dropdown ul").toggle();
+    	});
+  	});
+	</script>
+
+	<script type="text/javascript">
+   	$(document).ready(function(){
+  	$(function(){
+     	var shrinkHeader = 300;
+      	$(window).scroll(function() {
+        	var scroll = getCurrentScroll();
+          	if ( scroll >= shrinkHeader ) {
+               	$('#header, .mobile-nav-toggle a').addClass('shrink');  
+               	$('.navbar').removeClass('sub-shrink');            	 
+            	}
+            	else {
+                 	$('#header, .mobile-nav-toggle a').removeClass('shrink');
+                  	$('.navbar').addClass('sub-shrink');
+            	}
+      	});
+    	function getCurrentScroll() {
+        	return window.pageYOffset || document.documentElement.scrollTop;
+        	}
+    	});
+   	});
+	</script>
+
+ 	<script type="text/javascript">
+  	$("body")
+   	.on("click", "div.thirteen button.btn-search", function (event) {
+	event.preventDefault();
+	var $input = $("div.thirteen input");
+	$input.focus();
+	if ($input.val().length() > 0) {
+  	
+	}
+  });
+ 	</script>
 
 
    <!--  <script src="assets/js/third_party/jquery-2.2.4.min.js"></script> -->
