@@ -671,60 +671,8 @@
 
 	});
 	</script>
-	<script type="text/javascript">
-  	$(document).ready(function(){
-    	$(".navbar, .navbar ul").hide();
-    	$(".mobile-nav-toggle").click(function(){
-      	$(".navbar, .navbar ul").toggle();
-       	$(".dots").hide();
-    	});
-    	});
- 	 
-  	$(document).ready(function(){ 	 
-    	$(".dropdown ul").hide();
-    	$(".dropdown").click(function(){
-      	$(".dropdown ul").toggle();
-    	});
-  	});
-	</script>
-
-	<script type="text/javascript">
-   	$(document).ready(function(){
-  	$(function(){
-     	var shrinkHeader = 300;
-      	$(window).scroll(function() {
-        	var scroll = getCurrentScroll();
-          	if ( scroll >= shrinkHeader ) {
-               	$('#header').addClass('shrink');  
-               	$('.navbar').removeClass('sub-shrink');            	 
-            	}
-            	else {
-                 	$('#header').removeClass('shrink');
-                  	$('.navbar').addClass('sub-shrink');
-            	}
-      	});
-    	function getCurrentScroll() {
-        	return window.pageYOffset || document.documentElement.scrollTop;
-        	}
-    	});
-   	});
-	</script>
-
- 	<script type="text/javascript">
-  	$("body")
-   	.on("click", "div.thirteen button.btn-search", function (event) {
-	event.preventDefault();
-	var $input = $("div.thirteen input");
-	$input.focus();
-	if ($input.val().length() > 0) {
-  	// submit form
-	}
-  });
- 	</script>
 	
 	<script type="text/javascript">
-	 
-   
 $(function() {
   $('.mobile-nav-toggle').mouseenter(function() {
 	$('.navbar').addClass("active");
