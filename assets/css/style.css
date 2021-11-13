@@ -167,14 +167,16 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 30px 3em;
+ /* padding: 30px 3em;
+  height: 112px;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 997;*/
   transition: all 0.5s;
+
 }
 
 #header.shrink {
-  padding: 10px 3em;
+ /* padding: 10px 0em;*/ /*---- pikuaku-----*/
   background: #000000;
   box-shadow: 0px 0px 2px #3c3b3a;
 }
@@ -725,12 +727,12 @@ width: 100%;
 	position: fixed;
 	width: 100%;
 	left: 0;
-	top: 70px;
+	top: 70px; /*-- pikuaku--*/
 	background: #fdf1e2;
 	padding:60px 3em 60px 3em;
 }
 .navbar.sub-shrink {
-  top: 112px;
+  top: 132px; /*-- pikuaku--*/
 }
 
 .menu {
@@ -837,14 +839,28 @@ width: 100%;
   color: #fff;
 font-size: 14px;
 position: relative;
-/*left: 390px;
-left: calc(100 - 20)%;*/
 cursor: pointer;
 display: block;
 line-height: 0;
 transition: 0.5s;
-/*top: 14px;*/
 left: 92px;
+}
+.mobile-nav-toggle a {/*--- pikuaku ---*/
+  padding: 4.5em 0;
+  display: block;
+}
+
+.mobile-nav-toggle a.shrink { /*--- pikuaku ---*/
+  padding: 2.5em 0;
+  display: block;
+}
+
+.navbar {
+  display: none;
+}
+
+.active {
+   display: block;
 }
 
 @media (max-width: 991px) {
